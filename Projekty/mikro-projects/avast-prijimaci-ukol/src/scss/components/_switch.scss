@@ -1,0 +1,86 @@
+.switch {
+    &__option {
+        cursor: pointer; 
+        transition: border $delay-400;   
+ 
+        @media screen and(max-width: $max-lg) {
+            text-align: center; 
+        }
+
+        &--lg { 
+            padding: 1.5625rem;
+            border: 0.0625rem solid transparent; 
+            border-bottom: 0.0625rem solid rgba(255,255,255,.4); 
+        }
+
+        &:hover {
+            border: 0.0625rem solid $blue;  
+        }
+      
+        &.active {
+            background-color: rgba(255, 255, 255, .1); 
+            transition: background-color $delay-400 linear; 
+        }
+    }
+
+    &__item { 
+        @media screen and(min-width: $min-lg) {
+            display: flex; 
+            align-items: center;
+        }  
+
+        &:first-of-type {
+            @media screen and(min-width:$min-xl) {
+                display: flex;
+            } 
+        }
+
+        @media screen and(max-width: $max-lg) { 
+            &:not(:last-of-type) {
+                margin: 0 0 0.9375rem 0;
+            } 
+        }
+
+        .radio-group {  
+            @media screen and(min-width: $min-lg) {
+                margin-right: 2.1875rem; 
+            } 
+
+            .radio {
+                @media screen and(max-width: $max-lg) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+                } 
+
+                span {
+                    @media screen and(max-width: $max-lg) {
+                        position: relative;
+                        margin:0 0 0.9375rem 0;
+                    } 
+                }
+            }
+        } 
+    } 
+
+    &__label-zone {
+        position: relative; 
+
+        .label { 
+            display: inline-block; 
+
+            @media screen and(min-width: $min-lg) { 
+                position: absolute; 
+                left: 0; 
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            @media screen and(max-width: $max-lg) {
+                margin-top: 0.9375rem; 
+            }
+        }
+    } 
+}  

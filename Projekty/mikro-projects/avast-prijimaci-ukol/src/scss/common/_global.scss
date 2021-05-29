@@ -1,0 +1,58 @@
+// Delays
+$delay-400 : .4s;
+
+// Variables
+$green : #44ed9c;
+$white: #FFFFFF;
+$blue: #0087FF;
+$dark-blue: #261c6a;
+$purple: #593aff; 
+$red: #dc3545;
+$yellow: #c59400;
+
+// Breakpoints
+$min-sm: 576px;
+$min-md: 768px;
+$min-lg: 992px;
+$min-xl: 1200px;
+
+$max-sm: 575px;
+$max-md: 767px;
+$max-lg: 991px;
+$max-xl: 1199px; 
+
+.text-center {
+    text-align: center; 
+}
+
+.uppercase {  
+    text-transform: uppercase;
+}
+
+// Colors 
+.clr-white {
+    color: $white;
+}
+
+.clr-green {
+    color: $green;
+}
+
+// Backgrounds 
+.bg-purple {
+    background: $purple;  
+} 
+
+// Distances
+.vrtl-distance-80-80 {
+    padding: 5rem 0;
+} 
+
+.vrtl-distance-80-40 {
+    padding: 5rem 0 2.5rem 0;
+}  
+
+.vrtl-distance-60-30 {
+    padding: 3.75rem 0 1.875rem 0; 
+}
+ 

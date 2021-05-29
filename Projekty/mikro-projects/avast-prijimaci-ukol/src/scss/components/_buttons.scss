@@ -1,0 +1,80 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+
+    &--shadow {
+        box-shadow: 0rem 0.4375rem 0.9375rem rgba(0, 0, 0, 0.4); 
+    }
+
+    &--green {
+        background: $green;
+        color: $dark-blue;
+        border: 0.0625rem solid  $green;
+    }
+
+    &--anime { 
+        @media screen and(min-width:$min-md) {  
+            transition: all $delay-400; 
+            &:hover { 
+                background-color: transparent;
+                color: $green;
+                border: 0.0625rem solid $white;
+            } 
+        } 
+    }
+
+    &--lg {
+        border-radius: 2.25rem;
+        padding: 0.9375rem 2.1875rem; 
+    }
+} 
+ 
+.radio {
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;  
+    color: $white;
+    position: relative; 
+    padding-left: 1.875rem;
+    position: relative;
+
+    input[type="radio"] {
+        display: none;
+        &:checked ~ span:after {
+            transform: translate(-50%, -50%) scale(1);
+        } 
+    }
+     
+    &__element {
+        height: 1.25rem;
+        width: 1.25rem;
+        border-radius: 50%; 
+        border: 0.0625rem solid $white; 
+        display: inline-block; 
+        position: absolute;
+        left: 0;
+        top: -0.125rem; 
+        &:after {
+            content: "";
+            height: 0.625rem;
+            width: 0.625rem;
+            background-color: $green; 
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%; 
+            transform: translate(-50%, -50%) scale(0);
+            border-radius: 50%; 
+            transition: 300ms ease-in-out 0s;   
+        }
+    }
+}
+
+.radio + .radio {
+    margin-left: 1.25rem;  
+}
+ 

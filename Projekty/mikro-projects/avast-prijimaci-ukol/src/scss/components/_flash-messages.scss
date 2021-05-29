@@ -1,0 +1,17 @@
+.flash-message {
+    text-align: center;
+    color: $white;
+    padding: 0.9375rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    &--error {
+        background-color: $red;
+    }
+
+    &--warning {
+        background-color: $yellow;
+    }
+}

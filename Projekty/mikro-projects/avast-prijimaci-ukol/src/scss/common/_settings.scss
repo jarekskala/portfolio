@@ -1,0 +1,9 @@
+body {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 100%; 
+    @include bg-gradient(); 
+} 
+
+* {
+    box-sizing: border-box;
+}

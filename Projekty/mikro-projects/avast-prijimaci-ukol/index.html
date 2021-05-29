@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homework</title>
+    <meta name="description" content="Avast homework" /> 
+    <link rel="icon" href="dist/images/favicon.ico"> 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <!-- styles -->  
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+    <section class="ipm-ui vrtl-distance-80-80 clr-white"> 
+        <!-- HTML content goes here -->
+        <div class="container">
+            <h1 class="title-1 text-center">Please choose the length of your plan</h1> 
+
+            <div class="list-advantage vrtl-distance-80-40">
+                <h2 class="list-advantage__title title-2">Avast Driver Updater</h2> 
+                <ul class="list-advantage__content">   
+                    <li><img src="dist/images/tick.svg" alt="advantage" class="list-advantage__icon">Auto-scan your computer for outdated, missing, or corrupt drivers</li>
+                    <li><img src="dist/images/tick.svg" alt="advantage" class="list-advantage__icon">Check more than 500,000 drivers and software updates</li>
+                    <li><img src="dist/images/tick.svg" alt="advantage" class="list-advantage__icon">Keep your PC and devices running optimally with one click</li> 
+                </ul>
+            </div>
+
+            <div class="switch">
+                <label class="switch__option switch__option--lg d-flex js-switch-option"> 
+                    <div class="switch__item col-lg-7 col-md-12">
+                        <div class="radio-group">
+                            <div class="radio">
+                                <input type="radio" value="1" name="subscription-input">
+                                <span class="radio__element"></span>
+                                1-year subscription
+                            </div>
+                        </div>
+                    </div>
+                    <div class="switch__item col-lg col-md-12 clr-green js-price-per-mnth">
+                        $XX.XX / month
+                    </div>
+                    <div class="switch__item col-lg col-md-12 js-billed-as"> 
+                        Billed as $XX.XX / 1 year 
+                    </div>
+                </label>
+
+                <label class="switch__option switch__option--lg d-flex js-switch-option"> 
+                    <div class="switch__item col-lg-7 col-md-12">
+                        <div class="radio-group">
+                            <div class="radio">
+                                <input type="radio" value="2" name="subscription-input">
+                                <span class="radio__element"></span>
+                                2-year subscription
+                            </div>
+                        </div>
+
+                        <div class="switch__label-zone">
+                            <div class="label label--lg bg-purple uppercase">
+                                Recommended
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="switch__item col-lg col-md-12 clr-green js-price-per-mnth">
+                        $XX.XX / month
+                    </div>
+                    <div class="switch__item col-lg col-md-12 js-billed-as">
+                        Billed as $XX.XX / 2 years
+                    </div>
+                </label>
+
+                <label class="switch__option switch__option--lg d-flex js-switch-option"> 
+                    <div class="switch__item col-lg-7 col-md-12">
+                        <div class="radio-group">
+                            <div class="radio">
+                                <input type="radio" value="3" name="subscription-input">
+                                <span class="radio__element"></span>
+                                3-year subscription
+                            </div>
+                        </div>
+                    </div>
+                    <div class="switch__item col-lg col-md-12 clr-green js-price-per-mnth">
+                        $XX.XX / month
+                    </div>
+                    <div class="switch__item col-lg col-md-12 js-billed-as">
+                        Billed as $XX.XX / 3 years 
+                    </div>
+                </label>
+            </div>
+
+            <div class="action text-center vrtl-distance-60-30">
+                <a href="#" class="btn btn--lg btn--green btn--anime btn--shadow" id="js-btn-buy">Buy Now</a>
+            </div> 
+
+            <p class="text-center">30-day money-back guarantee</p>
+        </div>
+    </section> 
+
+    <script>
+        var __DATA__ = {
+            planSelector: [{
+                monthlyPrice: '$0.99',
+                yearlyPrice: '$11.88',
+                url: 'https://url-1-year.com'  
+            }, { 
+                monthlyPrice: '$1.99',
+                yearlyPrice: '$23.88',
+                url: 'https://url-2-years.com'
+            }, { 
+                monthlyPrice: '$2.99',
+                yearlyPrice: '$35.88',
+                url: 'https://url-3-years.com'
+            }]
+        };
+    </script>
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>
