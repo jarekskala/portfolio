@@ -27,7 +27,7 @@ const restaurant = {
 
   delivery: function({time = 20, count = 5, withBox = false}) { 
     console.log(`time ${time}`); 
-    console.log(`count ${count}`);  
+    console.log(`count ${count}`);   
     console.log(`width box: ${withBox}`);   
   }
 };
